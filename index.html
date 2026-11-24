@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TUGASKU</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside class="rail">
+      <div class="mark">T</div>
+      <nav id="nav"></nav>
+    </aside>
+    <main>
+      <header class="top">
+        <input
+          id="gq"
+          type="search"
+          placeholder="Cari tugas…"
+          oninput="searchTask(this.value)"
+        />
+        <button class="btn" onclick="editTask()">+ Tugas</button>
+        <button class="btn ghost" onclick="editNote()">+ Catatan</button>
+        <button class="btn ghost" id="tt" onclick="toggleTheme()">
+          Mode gelap
+        </button>
+      </header>
+      <div id="view"></div>
+    </main>
+    <div class="modal" id="modal"><form class="sheet" id="form"></form></div>
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
